@@ -1,0 +1,26 @@
+In task 2 for web scrapping first I tried with only beautiful soup package for python and tried to retrieve the data by inspect on the web link but that was not 
+successful as the ycombinator is a dynamic website and it keeps loading the companies and we have to include scroll down feature for scraping all the companies and 
+therefore I used Selenium for dynamic web as it is a web browser automation tool. 
+
+Requirements for running this code:
+#setting the query string to top100 to false makes the site load all companies in 1 list
+
+selenium package — used to automate web browser interaction from Python. 
+
+Virtualenv — to create an isolated Python environment for our project.
+
+ChromeDriver — provides a platform to launch and perform tasks in specified browser.
+chrome driver is based on chrome 83, and needs local chrome 83 installation, 
+more drivers can be found here https://chromedriver.chromium.org/downloads
+driver is expected in the script path
+
+The total no of companies count is 1000 and I scraped the company name, URL. This is working well for all 1000 companies.
+
+
+Optimization possible
+I have also tried to encode the company information under ‘facts’ tag that is ‘founded’, ‘team size’ and ‘location’ for the1000 companies 
+and its also working fine but due to one italic letter “I” in one one of the company “kudzo” .
+I have to make some Unicode or utf change while writing into csv but its printing fine for first 100 companies.Even for 1000 companies but not writing in correct
+format for 1000 ones and I am working on that now and will notify you once its update for now I tried with Unicode escape but its not writing in correct 
+format so I will fix this soon.
+
